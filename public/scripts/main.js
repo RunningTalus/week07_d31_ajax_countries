@@ -1,15 +1,14 @@
 $(function() {
 
-	// console.log('TEST!');
 	$(document).on('click','.btn', function(){
 		console.log('on click handler is WORKING');
 
-			$.get('/countries', function(countries){ //res.send
+			$.get('/countries', function(countries){ 
 			
 			var list = $('<ul>');
 
 			var listItems = countries.map(function(country) {
-				return $('<li class = "all-countries">' + country.region + '</li>');
+				return $('<li class = "all-countries">' + country.name + '</li>');
 			});
 
 			list.append(listItems);
