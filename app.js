@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/countries', function(req, res) {
-	console.log('From app.js app.get');
+	// console.log('From app.js app.get');
 	res.send(countries);
 });
 
